@@ -38,9 +38,9 @@ window.PET_DATA = {
     sex: "Male",
     birthday: "2015-03-12",
     img: "images/momma.JPG",
-    about: `Hi, I'm Loki!\nI love people and I'm very friendly.\nI have no allergies.\nI take chocoloate milk`,
+    about: `Hi, I'm Loki!\nI love people and I'm very friendly.\nI have no allergies.\nI love beer.`,
     owners: `CJ Knapp and Scott Garrett\n14285 NW 65th Place\nParkville, MO 64152`,
-    contacts: `Vet: Parkville Heights Animal Hospital - 81 6-741-2247\nCJ: 816-719-8259\nJane: 816-719-7599`,
+    contacts: `Vet: Parkville Heights Animal Hospital - 816-741-2247\nCJ: 816-719-8259\nScott: 816-719-7599`,
     ownerPhone: "+18167197599",
     
   }
