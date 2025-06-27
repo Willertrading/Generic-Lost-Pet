@@ -11,7 +11,7 @@ window.PET_DATA = {
     owners: `Dan and Shannon Willer\n20780 Coleman Brake Road\nMilford Center, Ohio 43045`,
     contacts: `Vet: Community Veterinary Clinic - 614-612-0326\nDan Willer: 614-657-2849\nShannon Willer: 614-216-7671`,
     ownerPhone: "+16142167671",
-    sheetUrl: "https://script.google.com/macros/s/AKfycbxqGoM-4H-J_Dggy4vvVsXpyqF2nwDHXtVsBjA_DhFltZuZhfE1XHsIBFHDIy5nwoRW/exec"
+    
   },
 
   // Add more pets like this:
@@ -26,8 +26,8 @@ window.PET_DATA = {
     about: `Hi, I'm Bella!\nI love people and I'm very friendly.\nI was found near the park without my collar.`,
     owners: `John and Jane Doe\n123 Main St\nSpringfield, Ohio 43000`,
     contacts: `Vet: Springfield Animal Hospital - 614-555-0199\nJohn: 614-555-1234\nJane: 614-555-5678`,
-    ownerPhone: "+16145550199",
-    sheetUrl: "https://example.com/post-location"
+    ownerPhone: "+16146572849",
+    
   }
 };
 
