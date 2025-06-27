@@ -137,8 +137,7 @@
       const phone = pet.ownerPhone;
       const msg   = encodeURIComponent(`I found ${pet.name}! My location: https://maps.google.com/?q=${lat},${lon}`);
       const link  = `sms:${phone}?&body=${msg}`;
-      fetch(pet.sheetUrl, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({lat,lon}) })
-        .catch(() => {});
+      
       status.textContent = '✅ Location captured. Opening SMS app…';
       window.location.href = link;
     }, () => {
