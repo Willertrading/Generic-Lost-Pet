@@ -133,11 +133,11 @@
     navigator.geolocation.getCurrentPosition(pos => {
       const lat = pos.coords.latitude.toFixed(6);
       const lon = pos.coords.longitude.toFixed(6);
-      output.textContent = `📍 Latitude: ${lat}, Longitude: ${lon}`;
+      
       const phone = pet.ownerPhone;
       const msg   = encodeURIComponent(`I found ${pet.name}! My location: https://maps.google.com/?q=${lat},${lon}`);
       const link  = `sms:${phone}?&body=${msg}`;
-      
+      output.textContent = `📍 Latitude: ${lat}, Longitude: ${lon}`;
       status.textContent = '✅ Location captured. Opening SMS app…';
       window.location.href = link;
     }, () => {
