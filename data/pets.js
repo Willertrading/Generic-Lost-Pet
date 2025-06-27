@@ -22,7 +22,7 @@ window.PET_DATA = {
     color: "Golden",
     sex: "Female",
     birthday: "2020-03-12",
-    img: "images/momma.jpg",
+    img: "images/momma.JPG",
     about: `Hi, I'm Bella!\nI love people and I'm very friendly.\nI love Dan.`,
     owners: `John and Jane Doe\n123 Main St\nSpringfield, Ohio 43000`,
     contacts: `Vet: Springfield Animal Hospital - 614-555-0199\nJohn: 614-555-1234\nJane: 614-555-5678`,
