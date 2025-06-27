@@ -16,10 +16,10 @@ window.PET_DATA = {
 
   // Add more pets like this:
   bella: {
-    name: "Bella",
-    species: "Doggy",
-    breed: "Golden Retriever",
-    color: "Golden",
+    name: "Momma",
+    species: "Cat",
+    breed: "American Shorthair",
+    color: "Tuxedo",
     sex: "Female",
     birthday: "2020-03-12",
     img: "images/momma.JPG",
