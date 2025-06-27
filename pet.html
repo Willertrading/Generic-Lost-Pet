@@ -93,7 +93,7 @@
   <p id="location"></p>
 
   <script>
- let pet;
+let pet;
 
 (function() {
   const params = new URLSearchParams(location.search);
@@ -135,34 +135,23 @@ function shareAndText() {
 
   status.textContent = 'Getting location…';
 
+  // Capture location and immediately send SMS
   navigator.geolocation.getCurrentPosition(
     (pos) => {
       const lat = pos.coords.latitude.toFixed(6);
       const lon = pos.coords.longitude.toFixed(6);
-      output.innerHTML = `📍 <a href="https://maps.google.com/?q=${lat},${lon}" target="_blank">Latitude: ${lat}, Longitude: ${lon}</a>`;
+      output.innerHTML = `📍 Latitude: ${lat}, Longitude: ${lon}`;
 
       const phone = pet.ownerPhone || '';
       const msg = encodeURIComponent(`I found ${pet.name}! My location: https://maps.google.com/?q=${lat},${lon}`);
       const smsLink = `sms:${phone}?&body=${msg}`;
 
-      status.textContent = '✅ Location captured. Tap to send:';
-      
-      // Create actual link
-      const smsButton = document.createElement('a');
-      smsButton.href = smsLink;
-      smsButton.textContent = '📩 Send SMS Now';
-      smsButton.style.display = 'inline-block';
-      smsButton.style.marginTop = '10px';
-      smsButton.style.fontSize = '24px';
-      smsButton.style.padding = '10px 20px';
-      smsButton.style.backgroundColor = '#ffcc00';
-      smsButton.style.borderRadius = '8px';
-      smsButton.style.textDecoration = 'none';
-      smsButton.style.color = 'black';
-      status.appendChild(smsButton);
+      // Try to immediately redirect
+      status.textContent = '✅ Opening SMS app…';
+      window.location.href = smsLink;
     },
-    () => {
-      status.textContent = '⚠️ Unable to retrieve location.';
+    (err) => {
+      status.textContent = '⚠️ Unable to get location. Please allow location access.';
     }
   );
 }
