@@ -134,17 +134,35 @@
       const lat = pos.coords.latitude.toFixed(6);
       const lon = pos.coords.longitude.toFixed(6);
       output.textContent = `📍 Latitude: ${lat}, Longitude: ${lon}`;
-      const phone = pet.ownerPhone;
-      output.textContent ='got the phone number'
-      const msg   = encodeURIComponent(`I found ${pet.name}! My location: https://maps.google.com/?q=${lat},${lon}`);
-         output.textContent ='got the message'
-      const link  = `sms:${phone}?&body=${msg}`;
+     
       
-      status.textContent = '✅ Location captured. Opening SMS app…';
-      window.location.href = link;
-    }, () => {
-      status.textContent = '⚠️ Unable to retrieve location.';
-    });
+      
+     // Format the SMS link
+        const phone = "+16142167671"; // <-- Your phone number
+        const message = encodeURIComponent(`I found Shadow! Here is my location: https://maps.google.com/?q=${lat},${lon}`);
+        const smsLink = `sms:${phone}?&body=${message}`;
+
+
+      
+
+      // Send to Google Sheet
+        fetch('https://script.google.com/macros/s/AKfycbxqGoM-4H-J_Dggy4vvVsXpyqF2nwDHXtVsBjA_DhFltZuZhfE1XHsIBFHDIy5nwoRW/exec', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ lat, lon })
+        })
+        .catch(() => {
+          console.log("Google Sheets logging failed.");
+        });
+
+        status.textContent = "✅ Location captured. Opening your texting app...";
+
+        // Redirect to open SMS app
+        window.location.href = smsLink;
+
+      }, () => {
+        status.textContent = "⚠️ Unable to retrieve location.";
+
   }
   </script>
 </body>
