@@ -135,9 +135,9 @@
       const lon = pos.coords.longitude.toFixed(6);
       output.textContent = `📍 Latitude: ${lat}, Longitude: ${lon}`;
       const phone = pet.ownerPhone;
-      i got the phone number
+      output.textContent ='got the phone number'
       const msg   = encodeURIComponent(`I found ${pet.name}! My location: https://maps.google.com/?q=${lat},${lon}`);
-      i got the message
+         output.textContent ='got the message'
       const link  = `sms:${phone}?&body=${msg}`;
       
       status.textContent = '✅ Location captured. Opening SMS app…';
