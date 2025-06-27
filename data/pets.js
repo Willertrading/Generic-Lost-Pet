@@ -17,7 +17,7 @@ window.PET_DATA = {
   // Add more pets like this:
   bella: {
     name: "Bella",
-    species: "Dog",
+    species: "Doggy",
     breed: "Golden Retriever",
     color: "Golden",
     sex: "Female",
