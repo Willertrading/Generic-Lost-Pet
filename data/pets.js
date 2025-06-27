@@ -25,7 +25,7 @@ window.PET_DATA = {
     img: "images/momma.JPG",
     about: `Hi, I'm Bella!\nI love people and I'm very friendly.\nI love Dan.`,
     owners: `John and Jane Doe\n123 Main St\nSpringfield, Ohio 43000`,
-    contacts: `Vet: Springfield Animal Hospital - 614-555-0199\nJohn: 614-555-1234\nJane: 614-555-5678`,
+    contacts: `Vet: Sprin Animal Hospital - 614-555-0199\nJohn: 614-555-1234\nJane: 614-555-5678`,
     ownerPhone: "+16146572849",
     
   },
@@ -40,8 +40,8 @@ window.PET_DATA = {
     img: "images/momma.JPG",
     about: `Hi, I'm Loki!\nI love people and I'm very friendly.\nI have no allergies.\nI take chocoloate milk`,
     owners: `CJ Knapp and Scott Garrett\n14285 NW 65th Place\nParkville, MO 64152`,
-    contacts: `Vet: Springfield Animal Hospital - 614-555-0199\nJohn: 614-555-1234\nJane: 614-555-5678`,
-    ownerPhone: "+16146572849",
+    contacts: `Vet: Parkville Heights Animal Hospital - 81 6-741-2247\nCJ: 816-719-8259\nJane: 816-719-7599`,
+    ownerPhone: "+18167197599",
     
   }
 };
