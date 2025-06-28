@@ -45,7 +45,8 @@
     .species { background-color: #4caf50; }
     .breed   { background-color: #607d8b; }
     .color   { background-color: #ff9800; }
-    .sex     { background-color: #42a5f5; }
+    .sexm     { background-color: #42a5f5; }
+    .sexf     { background-color: #FFC0CB; }
     .age     { background-color: #9c27b0; }
 
     button {
@@ -105,10 +106,23 @@ let pet;
   }
 
   document.getElementById('pet-name').textContent = pet.name;
-  document.getElementById('pet-species').textContent = '🐾 ' + pet.species;
+  document.getElementById('pet-species').textContent = pet.species;
   document.getElementById('pet-breed').textContent = pet.breed;
-  document.getElementById('pet-color').textContent = '🎨 ' + pet.color;
-  document.getElementById('pet-sex').textContent = '⚥ ' + pet.sex;
+  document.getElementById('pet-color').textContent = pet.color;
+  
+  const sexEl = document.getElementById('pet-sex');
+sexEl.textContent = pet.sex;
+
+// Remove any existing sex-specific class
+sexEl.classList.remove('sexm', 'sexf');
+
+// Add appropriate class
+if (pet.sex?.toLowerCase() === 'female') {
+  sexEl.classList.add('sexf');
+} else {
+  sexEl.classList.add('sexm');
+}
+  
   document.getElementById('pet-img').src = pet.img;
 
   const bd = new Date(pet.birthday);
@@ -117,7 +131,7 @@ let pet;
   const mDiff = now.getMonth() - bd.getMonth();
   const dDiff = now.getDate() - bd.getDate();
   if (mDiff < 0 || (mDiff === 0 && dDiff < 0)) age--;
-  document.getElementById('pet-age').textContent = '🎂 Age: ' + age;
+  document.getElementById('pet-age').textContent = 'Age: ' + age;
 
   document.getElementById('pet-about').innerHTML = pet.about.replace(/\n/g, '<br>');
   document.getElementById('pet-owners').innerHTML = pet.owners.replace(/\n/g, '<br>');
