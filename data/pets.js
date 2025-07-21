@@ -72,8 +72,22 @@ window.PET_DATA = {
     owners: `Shawn Knapp\n14285 NW 65th Place\nNICE CITY, CHINA`,
     contacts: `Vet: China Hospital - 816-741-2247\nShawn Knapp: 816-719-8259`,
     ownerPhone: "+18167197599", 
+  
+  },
+    
+  lowry: {
+    name: "Leroy",
+    species: "Dog",
+    breed: "",
+    color: "Brown",
+    sex: "Male",
+    birthday: "2020-03-12",
+    img: "images/lowry.jpg",
+    about: `My name is Leroy!!\nI am shy and do not like to be held.\nI am up to date on all of my vaccines`,
+    owners: `Mike and Wendi Lowry\n14625 Payne Rd\nMarysville, OH 43040`,
+    contacts: `Vet: Woodside Animal Hospital - 937-642-3111\nMike: 937-578-3779\nWendy: 937-243-6577`,
+    ownerPhone: "+19372436577", 
   }
-
   
 };
 
