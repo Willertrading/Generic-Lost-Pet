@@ -78,10 +78,10 @@ window.PET_DATA = {
   lowry: {
     name: "Leroy",
     species: "Dog",
-    breed: "",
+    breed: "Yorkie/Shi Tzu",
     color: "Brown",
     sex: "Male",
-    birthday: "2020-03-12",
+    birthday: "2023-11-09",
     img: "images/lowry.jpg",
     about: `My name is Leroy!!\nI am shy and do not like to be held.\nI am up to date on all of my vaccines`,
     owners: `Mike and Wendi Lowry\n14625 Payne Rd\nMarysville, OH 43040`,
