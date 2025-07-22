@@ -53,7 +53,7 @@ window.PET_DATA = {
     sex: "Male",
     birthday: "2016-06-06",
     img: "images/banner.png",
-    about: `Hi, I'm Banner!\nI do not tolerate heat very well.\nI have been neutered, chipped and my shots are up to date.\nI take the following medicine daily: \n125 mg Urodiol, \n1 Vetri Liver Canine Chew  \n1 Cosequin Max Strength tablet.`,
+    about: `Hi, I'm Banner!\nI do not tolerate heat very well.\nI have been neutered, chipped and my shots are up to date.\nI take the following medicine daily: \n125 mg Urodiol, \n1 Vetri Liver Canine Chew  \n1 Cosequin Max Strength tablet. \nEvery month I take: \n .50 ml injection of Adequan \n1.0 ml injection of Librela \nHeartguard Plus and Frontline Plus `,
     owners: `CJ Knapp and Scott Garrett\n14285 NW 65th Place\nParkville, MO 64152`,
     contacts: `Vet: Parkville Heights Animal Hospital - 816-741-2247\nCJ: 816-719-8259\nScott: 816-719-7599`,
     ownerPhone: "+18167197599", 
