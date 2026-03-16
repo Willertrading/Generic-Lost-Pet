@@ -87,7 +87,7 @@ window.PET_DATA = {
     owners: `Mike and Wendi Lowry\n14625 Payne Rd\nMarysville, OH 43040`,
     contacts: `Vet: Woodside Animal Hospital - 937-642-3111\nMike: 937-578-3779\nWendy: 937-243-6577`,
     ownerPhone: "+19372436577", 
-  }
+  },
 
   Simee: {
     name: "Simee Sim",
