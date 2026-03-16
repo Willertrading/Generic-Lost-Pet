@@ -88,6 +88,19 @@ window.PET_DATA = {
     contacts: `Vet: Woodside Animal Hospital - 937-642-3111\nMike: 937-578-3779\nWendy: 937-243-6577`,
     ownerPhone: "+19372436577", 
   }
-  
+
+  Simee: {
+    name: "Simee Sim",
+    species: "Cat",
+    breed: "Long Haired - Part Siamese",
+    color: "Light Brown,Dark Points",
+    sex: "Male",
+    birthday: "2023-11-09",
+    img: "images/Simee.jpg",
+    about: `My name is Simee Sim!!\nI was born with "Wobbly Cat Syndrome.\nI cannot walk,run or jump in a straight line`,
+    owners: `Mike and Wendi Lowry\n14625 Payne Rd\nMarysville, OH 43040`,
+    contacts: `Vet: Woodside Animal Hospital - 937-642-3111\nMike: 937-578-3779\nWendy: 937-243-6577`,
+    ownerPhone: "+19372436577", 
+  }
 };
 
